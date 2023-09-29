@@ -1,5 +1,5 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,23 +7,24 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+p foods
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods[:bread] = 45
+p foods
 
 
 #-------------------
@@ -38,15 +39,21 @@ p zoo
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 # Write code that prints your email hash to the terminal.
-
+email1 = {
+  "date" => "July 1, 1999",
+  "subject" => "13th birthday",
+  "sender" => "gramps@geocities.net",
+  "recipient" => "lambo86@askjeeves.biz",
+  "body" => "Yo there kiddo! Keep an eye out for a card in the mail. Happy Birthday! Love, G"
+}
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email1.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email1.values
 
 
 #-------------------
@@ -97,3 +104,29 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+{
+  date: "July 1, 1999",
+  subject: "13th birthday",
+  sender: "gramps@geocities.net",
+  recipient: "lambo86@askjeeves.biz",
+  body: "Yo there kiddo! Keep an eye out for a card in the mail. Happy Birthday! Love, G"
+},
+{
+  date: "April 13, 2023",
+  subject: "Great spring parade",
+  sender: "FarleyJones@zoogle.com",
+  recipient: "partymeter@zotz.net",
+  body: "Yo friend, that spring parade was going to be great!! Too bad it's already summer in April."
+},
+{
+  date: "Dec 23, 2021",
+  subject: "Postal Paradise",
+  sender: "maildaddy@letters.wiz",
+  recipient: "leatherpouch@letters.wiz",
+  body: "You ever deliver mail in Mount Hermon?? What a slice of postal heaven."
+}
+]
+
+p emails
